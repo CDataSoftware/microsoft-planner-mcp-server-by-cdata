@@ -1,9 +1,9 @@
 # microsoft-planner-mcp-server-by-cdata
 CData's Model Context Protocol (MCP) Server for Microsoft Planner
 
-:heavy_exclamation_mark: This project builds a read-only MCP server. For full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Microsoft Planner (beta)](https://www.cdata.com/download/download.aspx?sku=UIZM-V&type=beta). 
+:heavy_exclamation_mark: This project builds a local, read-only MCP server. For fully remote MCP access, check out the first managed MCP platform: [CData Connect AI](https://www.cdata.com/ai/). For locally hosted, full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Microsoft Planner](https://www.cdata.com/drivers/msplanner/download/mcp/).
 ## Purpose
-We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Microsoft Planner supported by the [CData JDBC Driver for Microsoft Planner](https://www.cdata.com/drivers/msplanner/jdbc).
+We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Microsoft Planner supported by the [CData JDBC Driver for Microsoft Planner](https://www.cdata.com/drivers/msplanner/jdbc/).
 
 CData JDBC Driver connects to Microsoft Planner by exposing them as relational SQL models.
 
@@ -20,7 +20,7 @@ This server wraps that driver and makes Microsoft Planner data available through
       mvn clean install
       ``` 
       This creates the JAR file: CDataMCP-jar-with-dependencies.jar
-2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/msplanner/download/jdbc](https://www.cdata.com/drivers/msplanner/download/jdbc)
+2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/msplanner/download/jdbc](https://www.cdata.com/drivers/msplanner/download/jdbc/)
 3. License the CData JDBC Driver:
     * Navigate to the `lib` folder in the installation directory, typically:
         * (Windows) `C:\Program Files\CData\CData JDBC Driver for Microsoft Planner\`
